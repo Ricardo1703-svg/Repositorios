@@ -76,8 +76,13 @@ WSGI_APPLICATION = 'proyectoRpro.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': BASE_DIR / 'db.sqlite3',
+        "USER" : "USUARIO",
+        "PASSWORD" : "Alvares17",
+        "HOST" : "NOM SERVER",
+        "PORT" : "5432"
+
     }
 }
 
