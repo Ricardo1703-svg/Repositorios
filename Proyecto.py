@@ -3,7 +3,7 @@ import serial
 import time
 
 # Configura el puerto serie según tu Arduino (debes cambiar el puerto COM y la velocidad de baudios según tu configuración)
-arduino_port = 'COM5'  # Cambia esto al puerto serial correcto
+arduino_port = 'COM9'  # Cambia esto al puerto serial correcto
 baud_rate = 9600
 
 try:
@@ -15,7 +15,7 @@ except Exception as e:
 root = tk.Tk()
 root.title("Lectura de Temperatura y Humedad")
 
-temperature_label = tk.Label(root, text="Temperatura: N/A", font=("Arial", 16))
+temperature_label = tk.Label(root, text="Temperatura:" , font=("Arial", 16))
 temperature_label.pack()
 
 humidity_label = tk.Label(root, text="Humedad: N/A", font=("Arial", 16))
