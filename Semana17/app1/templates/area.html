@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<body>
+    <h1>Lista de Areas</h1>
+    <ul>
+        {% for Area in Areas %}
+        <li>{{ Area.nombre_area }} - {{ Area.descripcion }}
+        {% endfor %}
+    </ul>
+</body>
+</html>
