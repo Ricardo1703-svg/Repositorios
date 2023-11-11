@@ -1,8 +1,10 @@
 import serial
+import time
 import tkinter
 
 # Crea un objeto de la clase Serial
 arduino = serial.Serial("COM5", 9600)
+time.sleep(1)
 
 # Crea una ventana de Tkinter
 ventana = tkinter.Tk()

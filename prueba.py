@@ -1,11 +1,11 @@
 import serial
+import time
 
 # Reemplaza 'COM3' con el nombre del puerto de tu Arduino
-port = 'COM5'
+serialArduino = serial.Serial("COM3", 9600)
+time.sleep(1)
 
-try:
-    arduino = serial.Serial(port, 9600)
-    print(f'Arduino en el puerto {port} está conectado.')
-    arduino.close()
-except serial.SerialException:
-    print(f'Arduino en el puerto {port} no está conectado.')
+while True:
+    cad = serialArduino.readline().decode('ascii')
+    print(cad)
+    print("------------------------")
