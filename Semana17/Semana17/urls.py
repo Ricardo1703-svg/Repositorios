@@ -7,7 +7,3 @@ urlpatterns = [
     path('empleados/', views.lista_empleado, name='lista_empleado'),
     path('ventas/', views.lista_venta, name='lista_venta'),
 ]
-
-
-
-
