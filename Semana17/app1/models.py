@@ -21,5 +21,3 @@ class Venta(models.Model):
     monto = models.FloatField()
     cliente_id = models.ForeignKey(Cliente, on_delete=models.CASCADE)
     empleado_id = models.ForeignKey(Empleado, on_delete=models.CASCADE)
-
-    
