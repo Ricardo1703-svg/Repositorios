@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<body>
+    <h1>Lista de Clientes</h1>
+    <ul>
+        {% for cliente in clientes %}
+        <li>{{ cliente.nombre }} - {{ cliente.direccion }} -
+            {{ cliente.telefono }} - {{ cliente.dui }}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="http://127.0.0.1:8000/">
+        <button>Inicio</button>
+    </a>
+    <a href="http://127.0.0.1:8000/proveedores/">
+        <button>Proveedores</button>
+    </a>
+    <a href="http://127.0.0.1:8000/clientes/">
+        <button>Clientes</button>
+    </a>
+    <a href="http://127.0.0.1:8000/productos/">
+        <button>Productos</button>
+    </a>
+</body>
+</html>

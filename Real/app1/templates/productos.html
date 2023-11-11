@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<body>
+    <h1>Lista de Productos</h1>
+    <ul>
+        {% for fruta in productos %}
+        <li>{{ fruta.nombre }} - {{ fruta.cantidad }} -
+            {{ fruta.proveedor }}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="http://127.0.0.1:8000/">
+        <button>Inicio</button>
+    </a>
+    <a href="http://127.0.0.1:8000/proveedores/">
+        <button>Proveedores</button>
+    </a>
+    <a href="http://127.0.0.1:8000/clientes/">
+        <button>Clientes</button>
+    </a>
+    <a href="http://127.0.0.1:8000/productos/">
+        <button>Productos</button>
+    </a>
+</body>
+</html>
