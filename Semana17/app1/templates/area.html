@@ -1,14 +1,7 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Areas</title>
-    <link rel="stylesheet" href="{% static 'css/estilosTraj.css' %}">
-</head>
 <body>
     <h1>Lista de Areas</h1>
-    <ul class="area-list">
+    <ul>
         {% for Area in Areas %}
         <li>{{ Area.nombre_area }} - {{ Area.descripcion }}</li>
         {% endfor %}
