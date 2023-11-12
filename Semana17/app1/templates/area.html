@@ -1,29 +1,17 @@
-{% load static %}
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
-	<!-- Estilos -->
-	<link rel="stylesheet" href="{% static 'css/estilosTraj.css' %}">
-
-	<title>R mc</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Areas</title>
+    <link rel="stylesheet" href="{% static 'css/estilosTraj.css' %}">
 </head>
 <body>
-    <div class="card">
-        <div class="title">Expert</div>
-        <div class="icon">
-        <svg enable-background="new 0 0 512 512" height="200px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px"></svg>
-        </div><!--/icon-->
-        <div class="features">
-            <ul>
-                {% for Area in Areas %}
-                <li>{{ Area.nombre_area }} - {{ Area.descripcion }}
-                {% endfor %}
-            </ul>
-        </div><!--/features-->
-        <a href="#" class="btn">Check it out</a>
+    <h1>Lista de Areas</h1>
+    <ul class="area-list">
+        {% for Area in Areas %}
+        <li>{{ Area.nombre_area }} - {{ Area.descripcion }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
