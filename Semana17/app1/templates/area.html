@@ -1,24 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<!-- Estilos -->
-	<link rel="stylesheet" href="estilosTraj.css">
-	<title>R mc</title>
-</head>
 <body>
-    <div class="card">
-        <div class="title">Lista de Areas</div>
-        <div class="icon">
-        <svg enable-background="new 0 0 512 512" height="200px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px"></svg>
-        </div><!--/icon-->
-        <div class="features">
-            <ul>
-                {% for Area in Areas %}
-                <li>{{ Area.nombre_area }} - {{ Area.descripcion }}
-                {% endfor %}
-            </ul>
-        </div><!--/features-->
+    <h1>Lista de Areas</h1>
+    <ul>
+        {% for Area in Areas %}
+        <li>{{ Area.nombre_area }} - {{ Area.descripcion }}
+        {% endfor %}
+    </ul>
 </body>
 </html>
