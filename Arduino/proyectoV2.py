@@ -1,47 +1,24 @@
-import serial
-import time
-import tkinter
+import tkinter as tk
+from time import strftime
 
-# Crea un objeto de la clase Serial
-arduino = serial.Serial("COM5", 9600)
-time.sleep(1)
+def actualizar_hora():
+    string_hora = strftime('%H:%M:%S %p')
+    etiqueta_hora.config(text=string_hora)
+    
+    string_fecha = strftime('%d/%m/%Y')
+    etiqueta_fecha.config(text=string_fecha)
 
-# Crea una ventana de Tkinter
-ventana = tkinter.Tk()
+    ventana.after(1000, actualizar_hora)
 
-# Crea un texto de Tkinter para mostrar la temperatura
-temperatura_texto = tkinter.Label(ventana, text="Temperatura:")
-temperatura_texto.grid(row=0, column=0)
+ventana = tk.Tk()
+ventana.title("Reloj en tiempo real")
 
-# Crea un texto de Tkinter para mostrar la humedad
-humedad_texto = tkinter.Label(ventana, text="Humedad:")
-humedad_texto.grid(row=1, column=0)
+etiqueta_hora = tk.Label(ventana, font=('calibri', 40, 'bold'), background='black', foreground='white')
+etiqueta_hora.pack(anchor='center')
 
-# Crea un texto de Tkinter para mostrar los valores de temperatura y humedad
-valor_temperatura = tkinter.Label(ventana, text="")
-valor_temperatura.grid(row=0, column=1)
+etiqueta_fecha = tk.Label(ventana, font=('calibri', 20, 'bold'), background='black', foreground='white')
+etiqueta_fecha.pack(anchor='center')
 
-valor_humedad = tkinter.Label(ventana, text="")
-valor_humedad.grid(row=1, column=1)
+actualizar_hora()
 
-# Crea una función para actualizar los valores de temperatura y humedad
-def actualizar_valores():
-    # Lee los datos del Arduino
-    datos = arduino.readline().decode("utf-8")
-
-    # Divide los datos en dos partes
-    temperatura, humedad = datos.split(",")
-
-    # Actualiza los valores de temperatura y humedad en los textos de Tkinter
-    valor_temperatura.config(text=temperatura)
-    valor_humedad.config(text=humedad)
-
-    # Actualiza la ventana
-    ventana.update()
-
-# Crea un botón de Tkinter para actualizar los valores de temperatura y humedad
-boton_actualizar = tkinter.Button(ventana, text="Actualizar", command=actualizar_valores)
-boton_actualizar.grid(row=2, column=0)
-
-# Inicia el bucle principal de Tkinter
 ventana.mainloop()

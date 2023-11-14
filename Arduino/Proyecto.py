@@ -2,8 +2,7 @@ import tkinter as tk
 import serial
 import time
 
-# Configura el puerto serie según tu Arduino (debes cambiar el puerto COM y la velocidad de baudios según tu configuración)
-arduino_port = 'COM3'  # Cambia esto al puerto serial correcto
+arduino_port = 'COM3'
 baud_rate = 9600
 
 try:
