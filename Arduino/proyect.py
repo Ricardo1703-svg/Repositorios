@@ -43,7 +43,7 @@ root.geometry("800x600")
 etiqueta_hora = tk.Label(root, font=('calibri', 10, 'bold'), background='black', foreground='white')
 etiqueta_hora.pack(anchor='center')
 #-----------------------------------------Fecha------------------------------------------------------
-etiqueta_fecha = tk.Label(root, font=('calibri', 10, 'bold'), background='black', foreground='white')
+etiqueta_fecha = tk.Label(root, font=('calibri', 10, 'bold'), background='red', foreground='black')
 etiqueta_fecha.pack(anchor='center')
 #----------------------------------------------Arduino-------------------------------------------------------------------
 etiqueta = tk.Label(root, text="Esperando datos...",font=('calibri', 10, 'bold'), background='black', foreground='white')
