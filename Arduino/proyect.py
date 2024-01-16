@@ -33,6 +33,11 @@ def Guardar_Datos():
     result = collection.insert_one(documento)
     messagebox.showinfo("Genial", f"Documento insertado con id: {result.inserted_id}!")
 
+def buscar_Datos():
+    resultados.delete(0, tk.END)
+    for doc in collection.find():
+        resultados.insert(tk.END, f"Datos: {doc['Datos']},Fecha: {doc['Fecha']},Hora: {doc['Hora']}")
+
 # Diseño de Ventana
 root = tk.Tk()
 root.title("Datos desde Arduino")
@@ -40,13 +45,13 @@ root.geometry("800x600")
 
 # Elementos de la GUI
 #-----------------------------------------Hora-----------------------------------------------------
-etiqueta_hora = tk.Label(root, font=('calibri', 10, 'bold'), background='black', foreground='white')
+etiqueta_hora = tk.Label(root, font=('calibri', 50, 'bold'), background='black', foreground='white')
 etiqueta_hora.pack(anchor='center')
 #-----------------------------------------Fecha------------------------------------------------------
-etiqueta_fecha = tk.Label(root, font=('calibri', 10, 'bold'), background='red', foreground='black')
+etiqueta_fecha = tk.Label(root, font=('calibri', 50, 'bold'), background='red', foreground='black')
 etiqueta_fecha.pack(anchor='center')
 #----------------------------------------------Arduino-------------------------------------------------------------------
-etiqueta = tk.Label(root, text="Esperando datos...",font=('calibri', 10, 'bold'), background='black', foreground='white')
+etiqueta = tk.Label(root, text="Esperando datos...",font=('calibri', 25, 'bold'), background='black', foreground='white')
 etiqueta.pack(pady=10)
 
 # Acuaizacion de los datos
@@ -59,8 +64,14 @@ def cerrar_ventana():
 root.protocol("WM_DELETE_WINDOW", cerrar_ventana)
 
 insertar_button = tk.Button(root, text="Guardar", command=Guardar_Datos, bg="#8bff82",font = ("Arial Black", 11))
-insertar_button.place(x=10, y=100)
+insertar_button.place(x=350, y=300)
 
+buscar_button = tk.Button(root, text="Consultar", command=buscar_Datos,bg="#07FBEF",font = ("Arial Black", 11))
+buscar_button.place(x=200, y=300)
+
+resultados = tk.Listbox(root, width=70, height=10,font = ("Arial Black",10),fg="black")
+resultados.place(x=150, y=400)
+resultados.configure(bg="#ffffff")
 
 # Iniciar el bucle principal de Tkinter
 root.mainloop()
