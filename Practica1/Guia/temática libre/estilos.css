@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    width: 200px; /* Ajusta el ancho según sea necesario */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contenedor-imagen {
+    flex: 2;
+}
+
+.imagen-jugador {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenedor-bandera {
+    flex: 1;
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 10px;
+}
+
+.club {
+    width: 50px;
+    height: auto;
+}
+
+.bandera {
+    width: 50px;
+    height: auto;
+}
+
+h1, h3, h4 {
+    margin: 0;
+}
+
+
+.btn {
+    border: none; 
+    color: black; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+/*--------------------------------Btn Milan---------------------------------------------------------*/
+.Milan {background-color: rgb(252, 12, 12); border: 2px solid #000000;} 
+.Milan:hover {background-color: #000000; color: white;}
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------Btn Barca---------------------------------------------------------*/
+.Barca {background-color: rgb(0, 63, 252); border: 2px solid #000000;} 
+.Barca:hover {background-color: #ff0000; color: white;}
+/*--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------Btn City---------------------------------------------------------*/
+.city {background-color: #05d1ff; border: 2px solid #000000;} 
+.city:hover {background-color: #03a2ff; color: white;}
+/*--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------Btn Madrid---------------------------------------------------------*/
+.madrid {background-color: white; border: 2px solid #000000;} 
+.madrid:hover {background-color: #d59331; color: white;}
+/*--------------------------------------------------------------------------------------------------*/
+
