@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #000000;
+    background-color: #0240f8;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -11,8 +11,8 @@ body {
 
 .tarjeta {
     width: 200px; /* Ajusta el ancho según sea necesario */
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #37538c;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
     border-radius: 8px;
     overflow: hidden;
     display: flex;
@@ -32,7 +32,7 @@ body {
 
 .contenedor-bandera {
     flex: 1;
-    background-color: #e0e0e0;
+    background-color: #dfcb19;
     text-align: center;
     padding: 10px;
 }
