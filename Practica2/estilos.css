@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.elemento {
+    color: aqua;
+    background-color: darkolivegreen;
+    margin: 10px;
+}
+
+.h01{
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
+
+.h02{
+    color: rgb(42, 165, 81);
+    background-color: brown;
+}
