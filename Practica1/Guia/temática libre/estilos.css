@@ -10,7 +10,7 @@ body {
 }
 
 .tarjeta {
-    width: 200px; /* Ajusta el ancho según sea necesario */
+    width: 200px;
     background-color: #37538c;
     box-shadow: 0 4px 8px rgb(255, 255, 255);
     border-radius: 8px;
@@ -79,4 +79,3 @@ h1, h3, h4 {
 .madrid {background-color: white; border: 2px solid #000000;} 
 .madrid:hover {background-color: #d59331; color: white;}
 /*--------------------------------------------------------------------------------------------------*/
-
