@@ -13,6 +13,17 @@
     cursor: pointer;
 }
 
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+    cursor: pointer;
+}
+
 footer {
     margin-top: 20px;
 }
