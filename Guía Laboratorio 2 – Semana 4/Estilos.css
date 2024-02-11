@@ -2,26 +2,28 @@
     display: flex;
 }
 
-.box {
+.box, .box1 {
     width: 200px;
     height: 100px;
-    background-color: orange;
     margin: 20px;
-    text-align: left;
-    display: inline-block;
-    line-height: 50px;
     cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px; 
+}
+
+.box {
+    background-color: orange;
+    text-align: left;
+    line-height: 50px;
 }
 
 .box1 {
     width: 200px;
     height: 200px;
     background-color: skyblue;
-    margin: 20px;
     text-align: center;
-    display: inline-block;
     line-height: 50px;
-    cursor: pointer;
+    border-radius: 20px; /* Podemos ajustar el radio para diferentes cuadros */
 }
 
 footer {
