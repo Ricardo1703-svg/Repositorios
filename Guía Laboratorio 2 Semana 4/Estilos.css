@@ -1,10 +1,18 @@
 body {
-    background-image: url('Guía Laboratorio 2 – Semana 4/Fondo.jpg');
+    background-image: url('Fondo.jpg');
 }
 
 
 .container {
     display: flex;
+}
+
+.h1{
+    background-color: white;
+}
+
+.p{
+    background-color: white;
 }
 
 .box, .box1 {
