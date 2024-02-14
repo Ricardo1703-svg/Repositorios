@@ -1,17 +1,41 @@
 // Mouseover
 document.getElementById('box1').addEventListener('mouseover', function() {
-    this.style.backgroundColor = 'lightgreen';
-    document.getElementById('description1').innerText = "Es una función en la que un usuario mueve el cursor sobre un elemento y produce una respuesta.";
+    this.style.backgroundColor = 'red';
+});
+document.getElementById('box2').addEventListener('mouseover', function() {
+    this.style.backgroundColor = 'blue';
+});
+document.getElementById('box3').addEventListener('mouseover', function() {
+    this.style.backgroundColor = 'green';
 });
 
 // Click
-document.getElementById('box2').addEventListener('click', function() {
-    this.style.backgroundColor = 'lightcoral';
-    document.getElementById('description2').innerText = "Es una función en la que un usuario hace clic en él y produce una respuesta.";
+document.getElementById('btn1').addEventListener('click', function() {
+    alert('Haz hecho clic en el botón 1');
+});
+document.getElementById('btn2').addEventListener('click', function() {
+    alert('Haz hecho clic en el botón 2');
+});
+document.getElementById('btn3').addEventListener('click', function() {
+    alert('Haz hecho clic en el botón 3');
 });
 
 // Focus
-document.getElementById('box3').addEventListener('focus', function() {
-    this.style.backgroundColor = 'lightyellow';
-    document.getElementById('description3').innerText = "Este cuadro cambia de color cuando recibes el enfoque.";
+document.getElementById('input1').addEventListener('focus', function() {
+    this.classList.add('focused');
+});
+document.getElementById('input1').addEventListener('blur', function() {
+    this.classList.remove('focused');
+});
+document.getElementById('input2').addEventListener('focus', function() {
+    this.classList.add('focused2');
+});
+document.getElementById('input2').addEventListener('blur', function() {
+    this.classList.remove('focused2');
+});
+document.getElementById('input3').addEventListener('focus', function() {
+    this.classList.add('focused3');
+});
+document.getElementById('input3').addEventListener('blur', function() {
+    this.classList.remove('focused3');
 });
