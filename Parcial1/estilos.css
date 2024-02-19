@@ -1,0 +1,58 @@
+/* Estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+main {
+  display: flex;
+}
+
+.descripcion {
+  border: 1px solid #ccc;
+  width: calc(65% - 20px);
+  background-color: gray;
+  flex: 1;
+  padding: 20px;
+}
+
+.contenido {
+  flex: 1;
+  padding: 20px;
+}
+
+.cuadro-derecha {
+  background-color: #ff0101;
+  padding: 20px;
+  border-radius: 5px;
+}
+.cuadro-derecha2 {
+  background-color: #5fbc1d;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.box1 {
+  width: auto;
+  height: auto;
+  background-color: rgb(204, 0, 255);
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+.pie-pagina {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
