@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1041311072923",
+    "project_id": "geniuskids-6642b",
+    "storage_bucket": "geniuskids-6642b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041311072923:android:064bc418033b60c1e8bc3e",
+        "android_client_info": {
+          "package_name": "com.example.geniuskids"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_wYbi5y-tqBnvMZDyEOuygNXj1O7TrAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
