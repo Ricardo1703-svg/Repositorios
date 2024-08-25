@@ -3,5 +3,13 @@ function Video1(){
 }
 
 function Video2(){
-    window.location.href = "https://hackernoon.com/es/los-24-mejores-css-free-to-use-buttons-with-codepen-examples"
+    window.location.href = "https://view.genially.com/66ca11b63a149c3c124381e5"
+}
+
+function Video3(){
+    window.location.href = "https://view.genially.com/66ca66003a149c3c127b4999"
+}
+
+function Video4(){
+    window.location.href = "https://view.genially.com/66ca92963a149c3c12951f45"
 }
