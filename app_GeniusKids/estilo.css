@@ -5,26 +5,26 @@ body {
 
 .banner {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Alinea los elementos horizontalmente */
     background-color: #154c79;
     color: white;
-    height: 100px; /* Altura del banner */
+    height: 150px; /* Ajusta la altura del banner */
 }
 
 .content {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Coloca el logo arriba y el texto abajo */
+    align-items: center; /* Centra los elementos horizontalmente */
     gap: 10px; /* Espacio entre el logo y el texto */
 }
 
 .logo {
-    height: 60px; /* Ajusta el tamaño del logo */
-    display: block; /* Asegura que se comporte como un bloque */
+    height: 60px; /* Tamaño del logo */
 }
 
 .message {
     font-size: 1.8rem;
     font-weight: bold;
-    margin: 0; /* Elimina márgenes extra del texto */
+    margin: 0; /* Elimina márgenes adicionales */
 }
