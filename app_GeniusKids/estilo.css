@@ -6,9 +6,15 @@ body {
 .banner {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #154c79;
-    color: black;
-    padding: 10px 20px;
+    color: white;
+    height: 100px; /* Ajusta la altura según sea necesario */
+}
+
+.content {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -20,3 +26,4 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
 }
+
