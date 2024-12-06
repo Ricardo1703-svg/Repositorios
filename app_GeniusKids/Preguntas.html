@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+    <link rel="stylesheet" href="estilos_preguntas.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="content">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="message">GeniusKids</div>
+        </div>
+    </div>
+    <h1>Preguntas Frecuentes</h1>
+    <div class="faq">
+        <h2 onclick="toggleAnswer(this)">¿Qué es esta app y para quién está diseñada?</h2>
+        <p>Es una aplicación educativa diseñada para niños, que fomenta el aprendizaje mediante actividades interactivas
+            y juegos.</p>
+    </div>
+
+    <div class="faq">
+        <h2 onclick="toggleAnswer(this)">¿Es segura la app para los niños?</h2>
+        <p>Sí, la app está diseñada para cumplir con los estándares de seguridad infantil, sin contenido inapropiado ni
+            riesgos para los niños.</p>
+    </div>
+
+    <div class="faq">
+        <h2 onclick="toggleAnswer(this)">¿La app es gratuita?</h2>
+        <p>Si, la app y la descarga es gratuita</p>
+    </div>
+
+    <div class="faq">
+        <h2 onclick="toggleAnswer(this)">¿La app requiere conexión a internet?</h2>
+        <p>Si, ya que todas las actividades y contenidos requieren conexión a internet.</p>
+    </div>
+
+    <div class="faq">
+        <h2 onclick="toggleAnswer(this)">¿Puedo recuperar el progreso si cambio de dispositivo?</h2>
+        <p>Sí, siempre que uses la misma cuenta registrada, podrás sincronizar y recuperar el progreso en otro
+            dispositivo.</p>
+    </div>
+
+    <script>
+        // Función para mostrar/ocultar la respuesta
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling; // Obtiene el elemento <p> que sigue al <h2>
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block"; // Muestra la respuesta
+            } else {
+                answer.style.display = "none"; // Oculta la respuesta
+            }
+        }
+    </script>
+</body>
+
+</html>

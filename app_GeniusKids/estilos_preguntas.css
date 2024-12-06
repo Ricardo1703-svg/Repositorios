@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+}
+h1 {
+    color: #2e07df;
+}
+.faq {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.faq h2 {
+    font-size: 1.2em;
+    color: #0a0a0a;
+    cursor: pointer;
+}
+.faq p {
+    margin: 0;
+    color: #555;
+    display: none; /* Oculta la respuesta inicialmente */
+    padding-top: 10px;
+}
+.faq h2:hover {
+    color: #007BFF;
+}
